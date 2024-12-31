@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Welcome to My Protfolio</h1>
-    <a href="/"><button>About</button></a>
-    <a href="/"><button>Skills</button></a>
-    <a href="/"><button>Projects</button></a>
-    <a href="/"><button>Contact</button></a>
+    <a href="/"><button type="button">About</button></a>
+    <a href="/"><button type="button">Skills</button></a>
+    <a href="/"><button type="button">Projects</button></a>
+    <a href="/"><button type="button">Contact</button></a>
     <h1>Sai Lakshman</h1>
     <img src="662f943bc4610_download.jpeg" alt="profileimage">
     <br>
@@ -26,5 +26,31 @@
         <li>Java</li>
         <li>C++</li>
     </ol>
+    <h1>Contact Me</h1>
+    <p>Feel free to get in touch with me using form below</p>
+    <form action="/" method="post">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text">
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email">
+        <br>
+        <b>Choose your gender:</b>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">female</label>
+        <br>
+        <b>Select your interests:</b>
+        <input type="checkbox" id="interests" name="interests" value="Coding">
+        <label for="interests">Coding</label>
+        <input type="checkbox" id="interests" name="interests" value="Reading">
+        <label for="interests">Reading</label>
+        <br>
+        <label for="bio">Bio (upto 200 characters):</label>
+        <input type="text" id="bio" name="bio" maxlength="200">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
